@@ -282,6 +282,16 @@ end
 # ===========================================
 
 """
+    compute_word_stats(row) -> NamedTuple
+
+Calculates statistics per word
+"""
+function compute_word_stats(row)::NamedTuple
+    correct = row.correct_attempts
+    wrong = row.
+end
+
+"""
     compute_statistics(df:DataFrame) -> Dict
 
 Calculates simple statistics and stores them into a Dictionary, which it returns.

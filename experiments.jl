@@ -12,7 +12,7 @@ df = DataFrame(
     a = Date("2025-05-01"):Day(1):Date("2025-05-10"),
 )
 
-df.b = [x^2 for x in df.a]
+df.b = [x + Day(7) for x in df.a]
 
 df
 
@@ -56,3 +56,15 @@ end
 
 Dates.today()
 Dates.format(now(), "yyyy-mm-dd HH:MM:SS")
+
+frame = DataFrame(
+    a = collect(1:2:21)
+)
+
+frame[!, "b"] = frame.a .* 2
+frame[!, "b"] = [val * 2 for val in frame.a]
+frame[!, "b"] = [row.a * 2 for row in eachrow(frame)]
+
+frame[!, "b"] = [val*2 for val in eachrow(frame[!, "a"])]
+
+frame
