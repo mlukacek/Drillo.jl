@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+<style>
+  table, td, th {
+      border-collapse: collapse;
+      font-family: sans-serif;
+  }
+
+  td, th {
+      border-bottom: 0;
+      padding: 4px
+  }
+
+  tr:nth-child(odd) {
+      background: #eee;
+  }
+
+  tr:nth-child(even) {
+      background: #fff;
+  }
+
+  tr.header {
+      background: #fff !important;
+      font-weight: bold;
+  }
+
+  tr.subheader {
+      background: #fff !important;
+      color: dimgray;
+  }
+
+  tr.headerLastRow {
+      border-bottom: 2px solid black;
+  }
+
+  th.rowNumber, td.rowNumber {
+      text-align: right;
+  }
+
+</style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr class = "header headerLastRow">
+      <th style = "text-align: right;">ID</th>
+      <th style = "text-align: right;">English</th>
+      <th style = "text-align: right;">German</th>
+      <th style = "text-align: right;">✅</th>
+      <th style = "text-align: right;">❌</th>
+      <th style = "text-align: right;">Last Seen</th>
+      <th style = "text-align: right;">Score</th>
+      <th style = "text-align: right;">Added</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">why</td>
+      <td style = "text-align: right;">das Warum</td>
+      <td style = "text-align: right;">2</td>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">2025-06-08</td>
+      <td style = "text-align: right;">0.37</td>
+      <td style = "text-align: right;">2025-05-24</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">2</td>
+      <td style = "text-align: right;">if</td>
+      <td style = "text-align: right;">if</td>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">0</td>
+      <td style = "text-align: right;">2025-05-25</td>
+      <td style = "text-align: right;">0.36</td>
+      <td style = "text-align: right;">2025-05-24</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">3</td>
+      <td style = "text-align: right;">goodbye</td>
+      <td style = "text-align: right;">Der Auf Wiedersehen</td>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">4</td>
+      <td style = "text-align: right;">2025-06-08</td>
+      <td style = "text-align: right;">0.65</td>
+      <td style = "text-align: right;">2025-05-24</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">4</td>
+      <td style = "text-align: right;">fox</td>
+      <td style = "text-align: right;">der Fuchs</td>
+      <td style = "text-align: right;">3</td>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">2025-06-21</td>
+      <td style = "text-align: right;">0.15</td>
+      <td style = "text-align: right;">2025-05-24</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">5</td>
+      <td style = "text-align: right;">lion</td>
+      <td style = "color: red; font-weight: bold; text-align: right;">Löwe</td>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">6</td>
+      <td style = "text-align: right;">2025-06-21</td>
+      <td style = "text-align: right;">0.51</td>
+      <td style = "text-align: right;">2025-05-24</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">6</td>
+      <td style = "text-align: right;">zebra!</td>
+      <td style = "color: red; font-weight: bold; text-align: right;">das Zebra!</td>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">6</td>
+      <td style = "text-align: right;">2025-06-08</td>
+      <td style = "text-align: right;">0.69</td>
+      <td style = "text-align: right;">2025-05-24</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">7</td>
+      <td style = "text-align: right;">elephant</td>
+      <td style = "text-align: right;">Elefant</td>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">5</td>
+      <td style = "text-align: right;">2025-06-08</td>
+      <td style = "text-align: right;">0.67</td>
+      <td style = "text-align: right;">2025-05-24</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">8</td>
+      <td style = "text-align: right;">thank you</td>
+      <td style = "text-align: right;">Danke</td>
+      <td style = "text-align: right;">2</td>
+      <td style = "text-align: right;">6</td>
+      <td style = "text-align: right;">2025-06-21</td>
+      <td style = "text-align: right;">0.45</td>
+      <td style = "text-align: right;">2025-05-24</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">9</td>
+      <td style = "text-align: right;">see you soon</td>
+      <td style = "text-align: right;">bis bald</td>
+      <td style = "text-align: right;">3</td>
+      <td style = "text-align: right;">0</td>
+      <td style = "text-align: right;">2025-06-07</td>
+      <td style = "text-align: right;">0.19</td>
+      <td style = "text-align: right;">2025-05-24</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">10</td>
+      <td style = "text-align: right;">cheers</td>
+      <td style = "text-align: right;">prost</td>
+      <td style = "text-align: right;">2</td>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">2025-06-14</td>
+      <td style = "text-align: right;">0.29</td>
+      <td style = "text-align: right;">2025-05-24</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">11</td>
+      <td style = "text-align: right;">leopard</td>
+      <td style = "text-align: right;">der Leopard</td>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">0</td>
+      <td style = "text-align: right;">2025-05-25</td>
+      <td style = "text-align: right;">0.36</td>
+      <td style = "text-align: right;">2025-05-25</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">12</td>
+      <td style = "text-align: right;">if</td>
+      <td style = "text-align: right;">wenn</td>
+      <td style = "text-align: right;">3</td>
+      <td style = "text-align: right;">0</td>
+      <td style = "text-align: right;">2025-06-08</td>
+      <td style = "text-align: right;">0.17</td>
+      <td style = "text-align: right;">2025-05-25</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">13</td>
+      <td style = "text-align: right;">monkey</td>
+      <td style = "text-align: right;">der Affe</td>
+      <td style = "text-align: right;">4</td>
+      <td style = "text-align: right;">3</td>
+      <td style = "text-align: right;">2025-06-21</td>
+      <td style = "text-align: right;">0.26</td>
+      <td style = "text-align: right;">2025-05-25</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">14</td>
+      <td style = "text-align: right;">scooter</td>
+      <td style = "text-align: right;">der Roller</td>
+      <td style = "text-align: right;">2</td>
+      <td style = "text-align: right;">6</td>
+      <td style = "text-align: right;">2025-06-21</td>
+      <td style = "text-align: right;">0.45</td>
+      <td style = "text-align: right;">2025-05-25</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">15</td>
+      <td style = "text-align: right;">rifle</td>
+      <td style = "text-align: right;">das Gewehr</td>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">0</td>
+      <td style = "text-align: right;">2025-05-25</td>
+      <td style = "text-align: right;">0.36</td>
+      <td style = "text-align: right;">2025-05-25</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">16</td>
+      <td style = "text-align: right;">nose</td>
+      <td style = "color: red; font-weight: bold; text-align: right;">die Nase</td>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">8</td>
+      <td style = "text-align: right;">2025-06-21</td>
+      <td style = "text-align: right;">0.53</td>
+      <td style = "text-align: right;">2025-05-25</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">17</td>
+      <td style = "text-align: right;">drink</td>
+      <td style = "text-align: right;">trinken</td>
+      <td style = "text-align: right;">2</td>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">2025-06-21</td>
+      <td style = "text-align: right;">0.2</td>
+      <td style = "text-align: right;">2025-06-05</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">18</td>
+      <td style = "text-align: right;">headphones</td>
+      <td style = "color: red; font-weight: bold; text-align: right;">sluchadla</td>
+      <td style = "text-align: right;">0</td>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">2025-06-21</td>
+      <td style = "text-align: right;">0.6</td>
+      <td style = "text-align: right;">2025-06-14</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">19</td>
+      <td style = "text-align: right;">jump</td>
+      <td style = "color: red; font-weight: bold; text-align: right;">springen</td>
+      <td style = "text-align: right;">0</td>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">2025-06-21</td>
+      <td style = "text-align: right;">0.6</td>
+      <td style = "text-align: right;">2025-06-14</td>
+    </tr>
+    <tr>
+      <td style = "text-align: right;">20</td>
+      <td style = "text-align: right;">play</td>
+      <td style = "text-align: right;">spielen</td>
+      <td style = "text-align: right;">1</td>
+      <td style = "text-align: right;">0</td>
+      <td style = "text-align: right;">2025-06-21</td>
+      <td style = "text-align: right;">0.0</td>
+      <td style = "text-align: right;">2025-06-14</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
